@@ -26,9 +26,14 @@
   /*Primer cero es flex-grow que no crezca si hay espacio*/
   /*Segundo cero es flex-width que no dr encoja si hay espacio*/
   /*18% es el width*/
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between; // cuando son dos elementos todo el espacion lo
+  //pone en medio y empuja hasta arriba o abajo, izuqierda o derecha.
 }
 
 .hotel-view {
+  height: 80rem;
   background-color: #fff;
   flex: 1;
   /*indicamos flex-grow: 1 que crezca y ocupe todo el espacio que queda*/
