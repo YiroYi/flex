@@ -1,0 +1,31 @@
+.container {
+  max-width: 120rem;
+  margin: 8rem auto;
+  background-color: var(--color-grey-light-2);
+  box-shadow: var(--box-shadow-1);
+  min-height: 50rem;
+}
+
+.header {
+  height: 7rem;
+  background-color: #fff;
+  border-bottom: var(--color-grey-light-2)
+}
+
+.content {
+  display: flex;
+}
+
+.sidebar {
+  background-color: var(--color-grey-dark-1);
+  flex: 0 0 18%;
+  /*Primer cero es flex-grow que no crezca si hay espacio*/
+  /*Segundo cero es flex-width que no dr encoja si hay espacio*/
+  /*18% es el width*/
+}
+
+.hotel-view {
+  background-color: #fff;
+  flex: 1;
+  /*indicamos flex-grow: 1 que crezca y ocupe todo el espacio que queda*/
+}
