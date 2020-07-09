@@ -43,16 +43,20 @@
   padding: 4.5rem; // todo el elemento adentro va a tener padding
   border-bottom: var(--line);
   background-color: var(--color-grey-light-1);
+  font-size: 1.4rem;
 }
 
 .description {
-  font-size: 1.4rem;
   background-color: #fff;
   box-shadow: var(--shadow-light);
   padding: 3rem;
   flex: 0 0 60%; // 0 grow 0 shrink que ocupe el 60% , esto es para dar tamano fixed al contenedor
+  margin-right: 4.5rem;
 }
 
 .user-review {
   flex: 1; // que ocupe el espacio que queda.
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
