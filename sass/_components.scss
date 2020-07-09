@@ -181,8 +181,56 @@
 }
 
 
+.gallery {
+  display: flex;
+  &__item {
+
+  }
+
+  &__photo {
+    width:100%; // van a tomar el 100% del espacio restante
+    display:block;
+  }
+}
 
 
+.overview {
+  display: flex;
+  justify-content: space-between;
+
+
+  &__heading {
+
+  }
+
+  &__stars {
+    margin-right: auto; // toma todo el espacion disponible que queda y los
+    // items a la derecha los empuja hasta la izquierda.
+  }
+
+  &__icon-star,
+  &__icon-location {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: var(--color-primary);
+  }
+
+  &__location {
+
+  }
+
+  &__rating {
+
+  }
+
+  &__rating-average {
+
+  }
+
+  &__rating-count {
+
+  }
+}
 
 
 
