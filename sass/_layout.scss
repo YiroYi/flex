@@ -4,6 +4,12 @@
   background-color: var(--color-grey-light-2);
   box-shadow: var(--box-shadow-1);
   min-height: 50rem;
+
+  @media only screen and (max-width: $bp-largest) {
+    margin:0;
+    max-width: 100%;
+    width:100%;
+  }
 }
 
 .header {
@@ -14,10 +20,21 @@
   display: flex;
   justify-content: space-between; //alinea sobre x
   align-items: center; //alinea sobre y
+
+  @media only screen and (max-width: $bp-smallest) {
+      flex-wrap: wrap; // si ya no hay espacio hecha el ultimo elemento
+      // a la siguiente columna.
+      align-content: space-around;
+      height: 11rem;
+  }
 }
 
 .content {
   display: flex;
+
+  @media only screen and (max-width: $bp-medium) {
+    flex-direction: column;
+  }
 }
 
 .sidebar {
@@ -44,6 +61,14 @@
   border-bottom: var(--line);
   background-color: var(--color-grey-light-1);
   font-size: 1.4rem;
+
+  @media only screen and (max-width: $bp-medium) {
+      padding: 3rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+  }
 }
 
 .description {
@@ -52,6 +77,16 @@
   padding: 3rem;
   flex: 0 0 60%; // 0 grow 0 shrink que ocupe el 60% , esto es para dar tamano fixed al contenedor
   margin-right: 4.5rem;
+
+  @media only screen and (max-width: $bp-medium) {
+      padding: 2rem;
+      margin-right: 3rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+      margin: 0 auto;
+      margin-bottom: 3rem;
+  }
 }
 
 .user-review {
@@ -62,16 +97,6 @@
 }
 
 
-.cta {
-  padding: 3.5rem 0;
-  text-align: center;
 
-  &__book-now {
-    font-size: 2rem;
-    font-weight: 300;
-    text-transform: uppercase;
-    margin-bottom: 2.5rem;
-  }
-}
 
 

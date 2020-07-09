@@ -18,6 +18,15 @@
   --shadow-light: 0 2rem 5rem rgba(0,0,0,0.6);
 }
 
+//Media queryes
+ $bp-largest: 75em; //1200px
+ $bp-large: 68.75em; //1200px
+ $bp-medium: 56.25em;
+ $bp-small: 37.5em;
+ $bp-smallest: 31.25em;
+
+//Media queryes
+
 * {
   margin: 0;
   padding: 0;
@@ -33,6 +42,10 @@
 html {
   box-sizing: border-box;// incluye el padding y el border en width y height
   font-size: 62.5%; //1 rem = 10 px => 10px/16px (browser default) = 62.5%
+
+  @media only screen and (max-width: $bp-large) {
+    font-size:50%;
+  }
 }
 
 body {
